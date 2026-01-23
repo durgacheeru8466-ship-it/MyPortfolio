@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Timetable using Bootstrap Flex</title>
+
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .time, .day, .cell {
+            border: 1px solid #dee2e6;
+            padding: 12px;
+            text-align: center;
+            font-weight: 500;
+        }
+        .day {
+            background-color: #0d6efd;
+            color: white;
+        }
+        .time {
+            background-color: #f8f9fa;
+            font-weight: bold;
+        }
+        .cell {
+            min-height: 70px;
+        }
+        .lunch {
+            background-color: #ffc107;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container mt-5">
+    <h2 class="text-center mb-4">Weekly Timetable</h2>
+
+    <!-- Header Row -->
+    <div class="d-flex">
+        <div class="time flex-shrink-0" style="width: 120px;">Time</div>
+        <div class="day flex-fill">Monday</div>
+        <div class="day flex-fill">Tuesday</div>
+        <div class="day flex-fill">Wednesday</div>
+        <div class="day flex-fill">Thursday</div>
+        <div class="day flex-fill">Friday</div>
+    </div>
+
+    <!-- Row 1 -->
+    <div class="d-flex">
+        <div class="time flex-shrink-0" style="width: 120px;">9:00 - 10:00</div>
+        <div class="cell flex-fill">Math</div>
+        <div class="cell flex-fill">Physics</div>
+        <div class="cell flex-fill">Chemistry</div>
+        <div class="cell flex-fill">English</div>
+        <div class="cell flex-fill">Computer</div>
+    </div>
+
+    <!-- Row 2 -->
+    <div class="d-flex">
+        <div class="time flex-shrink-0" style="width: 120px;">10:00 - 11:00</div>
+        <div class="cell flex-fill">English</div>
+        <div class="cell flex-fill">Math</div>
+        <div class="cell flex-fill">Biology</div>
+        <div class="cell flex-fill">Physics</div>
+        <div class="cell flex-fill">Chemistry</div>
+    </div>
+
+    <!-- Row 3 -->
+    <div class="d-flex">
+        <div class="time flex-shrink-0" style="width: 120px;">11:00 - 12:00</div>
+        <div class="cell flex-fill">Computer</div>
+        <div class="cell flex-fill">English</div>
+        <div class="cell flex-fill">Math</div>
+        <div class="cell flex-fill">Biology</div>
+        <div class="cell flex-fill">Physics</div>
+    </div>
+
+    <!-- Lunch Row -->
+    <div class="d-flex">
+        <div class="time flex-shrink-0" style="width: 120px;">12:00 - 1:00</div>
+        <div class="cell lunch flex-fill text-center">Lunch Break</div>
+    </div>
+
+    <!-- Row 4 -->
+    <div class="d-flex">
+        <div class="time flex-shrink-0" style="width: 120px;">1:00 - 2:00</div>
+        <div class="cell flex-fill">Physics</div>
+        <div class="cell flex-fill">Chemistry</div>
+        <div class="cell flex-fill">English</div>
+        <div class="cell flex-fill">Math</div>
+        <div class="cell flex-fill">Biology</div>
+    </div>
+
+    <!-- Row 5 -->
+    <div class="d-flex">
+        <div class="time flex-shrink-0" style="width: 120px;">2:00 - 3:00</div>
+        <div class="cell flex-fill">Biology</div>
+        <div class="cell flex-fill">Computer</div>
+        <div class="cell flex-fill">Physics</div>
+        <div class="cell flex-fill">Chemistry</div>
+        <div class="cell flex-fill">Math</div>
+    </div>
+
+</div>
+
+</body>
+</html>
